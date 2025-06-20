@@ -1,6 +1,6 @@
-pandas 
+streamlit
+pandas
 numpy
 seaborn
-scickit-learn
-streamlit
+scikit-learn
 joblib
