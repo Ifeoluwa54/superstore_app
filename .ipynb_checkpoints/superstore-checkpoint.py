@@ -16,8 +16,7 @@ with open('encodings.json', 'r') as f:
     encodings = json.load(f)
 
 # Load dataset
-df = pd.read_csv(r"C:\Users\User\Desktop\Documents\DA\datasets\Superstore.csv", encoding='latin1')
-
+df = pd.read_csv("Superstore.csv", encoding='latin1')
 # Streamlit UI
 st.set_page_config(page_title='Superstore Sales Prediction App', layout='wide')
 st.title('Sales Analysis and Prediction Web App')
@@ -49,12 +48,12 @@ elif page == 'Visualizations':
     ])
     
     image_map = {
-        'Sales distribution by region': 'Sales distribution by region.png',
+        'Sales distribution by region': 'sales distribution by region.png',
         'Sales by customers segment': 'Sales by customers segment.png',
         'Sales trend over the years': 'sales trend over the years.png',
         'relationship between sales, state and subcategries': 'heatmat.png',
         'Total loss by state': 'Total loss by state.png',
-        'Total discount by state': 'Total discount by state.png'
+        'Total discount by state': 'total discount by state.png'
     }
     
     if selected_img in image_map:

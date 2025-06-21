@@ -48,12 +48,12 @@ elif page == 'Visualizations':
     ])
     
     image_map = {
-        'Sales distribution by region': 'Sales distribution by region.png',
+        'Sales distribution by region': 'sales distribution by region.png',
         'Sales by customers segment': 'Sales by customers segment.png',
         'Sales trend over the years': 'sales trend over the years.png',
         'relationship between sales, state and subcategries': 'heatmat.png',
         'Total loss by state': 'Total loss by state.png',
-        'Total discount by state': 'Total discount by state.png'
+        'Total discount by state': 'total discount by state.png'
     }
     
     if selected_img in image_map:
