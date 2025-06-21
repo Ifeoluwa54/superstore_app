@@ -16,8 +16,7 @@ with open('encodings.json', 'r') as f:
     encodings = json.load(f)
 
 # Load dataset
-df = pd.read_csv(r"C:\Users\User\Desktop\Documents\DA\datasets\Superstore.csv", encoding='latin1')
-
+df = pd.read_csv("Superstore.csv", encoding='latin1')
 # Streamlit UI
 st.set_page_config(page_title='Superstore Sales Prediction App', layout='wide')
 st.title('Sales Analysis and Prediction Web App')
